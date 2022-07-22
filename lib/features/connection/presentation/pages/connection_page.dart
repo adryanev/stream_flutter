@@ -20,7 +20,10 @@ class ConnectionPage extends StatelessWidget {
                 (l) => l.when(
                   connectivityFailure: () => const Text('Connectivity failure'),
                 ),
-                (r) => Text('Connection: ${r.isConnectedToInternet}'),
+                (r) => Text(
+                  'Connection: ${r.isConnectedToInternet}',
+                  style: Theme.of(context).textTheme.displayMedium,
+                ),
               ),
             );
           },
