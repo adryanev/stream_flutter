@@ -1,0 +1,38 @@
+name: stream_flutter
+description: A Very Good Project created by Very Good CLI.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: 3.0.4
+
+dependencies:
+  bloc: ^8.0.3
+  connectivity_plus: ^2.3.6
+  dartz: ^0.10.1
+  equatable: ^2.0.3
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.0.1
+  flutter_localizations:
+    sdk: flutter
+  freezed_annotation: ^2.1.0
+  get_it: ^7.2.0
+  injectable: ^1.5.3
+  intl: ^0.17.0
+  rxdart: ^0.27.5
+
+dev_dependencies:
+  bloc_test: ^9.0.3
+  build_runner: ^2.2.0
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.1.0+1
+  injectable_generator: ^1.5.4
+  mocktail: ^0.3.0
+  very_good_analysis: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  generate: true
