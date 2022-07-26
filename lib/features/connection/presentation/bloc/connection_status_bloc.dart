@@ -25,15 +25,15 @@ class ConnectionStatusBloc
     on<ConnectionReceived>(_onConnectionReceived);
   }
 
+  final ListenConnection _listenConnection;
+  StreamSubscription<Either<Failure, Connection>>?
+      _connectionStreamSubscription;
+
   @override
   Future<void> close() {
     _connectionStreamSubscription?.cancel();
     return super.close();
   }
-
-  final ListenConnection _listenConnection;
-  StreamSubscription<Either<Failure, Connection>>?
-      _connectionStreamSubscription;
 
   Future<void> _onConnectionReceived(
     ConnectionReceived event,
