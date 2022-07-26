@@ -7,7 +7,7 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:stream_flutter/app/app.dart';
-import 'package:stream_flutter/features/connection/presentation/pages/connection_page.dart';
+import 'package:stream_flutter/features/home/presentation/pages/home_page.dart';
 
 import '../../helpers/setup_di.dart';
 
@@ -16,9 +16,9 @@ void main() {
     await setupTestingDependencyInjection();
   });
   group('App', () {
-    testWidgets('renders Connection', (tester) async {
+    testWidgets('renders Home', (tester) async {
       await tester.pumpWidget(const App());
-      expect(find.byType(ConnectionPage), findsOneWidget);
+      expect(find.byType(HomePage), findsOneWidget);
     });
   });
 }

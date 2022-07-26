@@ -16,6 +16,7 @@ Studying Reactive and Stream in Flutter.
 
 | Feature |Description | Images |
 | --- | --- | --- |
+| Home Page | Home page of Apps | ![Home Page](repo_images/home_page.png) |
 |Connection | Listening to Device Connection Status|![Connection On](repo_images/connection_on.png) ![Connection Off](repo_images/connection_off.png) |
 
 ---
