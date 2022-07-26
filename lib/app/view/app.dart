@@ -6,11 +6,8 @@
 // https://opensource.org/licenses/MIT.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:stream_flutter/app/router/app_router.dart';
-import 'package:stream_flutter/features/connection/presentation/bloc/connection_status_bloc.dart';
-import 'package:stream_flutter/injector.dart';
 import 'package:stream_flutter/l10n/l10n.dart';
 
 class App extends StatelessWidget {
